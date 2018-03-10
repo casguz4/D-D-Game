@@ -1,0 +1,24 @@
+Let's use this as a living document to check off what we have to do for this project.
+
+Make sure that when making commits you give a decent commit title so that everyone knows what was pushed.
+
+Cas:
+*Weapon Class
+*Armor Class
+*Abstract Player - Done
+*Specialty Player Classes - Done
+*Dice - Done
+*Add array bag implementation - Done
+
+Marti:
+*NPC/Enemy Classes with ranks
+
+Pete:
+*GUI Interface
+
+
+We need to assign things like :
+*dungeon/world map
+*Save/Load to and from text file or text files ie(save/load player file, map file, npc file)
+
+If there are any other things we recognize we can add it here under each persons responsibilities.

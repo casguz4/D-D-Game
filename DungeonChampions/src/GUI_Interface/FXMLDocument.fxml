@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="766.0" prefWidth="1046.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group_game.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Button layoutX="323.0" layoutY="670.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="99.0" text="Attack" />
+      <Button layoutX="476.0" layoutY="672.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="99.0" text="Run" />
+      <Button layoutX="614.0" layoutY="673.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="99.0" text="Hide" />
+      <Button layoutX="42.0" layoutY="274.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="99.0" text="Fighter" />
+      <Button layoutX="42.0" layoutY="347.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="99.0" text="Theif" />
+      <Button layoutX="41.0" layoutY="200.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="102.0" text="Wizard" />
+      <Label alignment="CENTER" layoutX="473.0" layoutY="24.0" prefHeight="49.0" prefWidth="170.0" text="Adventure Game" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="161.0" layoutY="240.0" prefHeight="17.0" prefWidth="69.0" text="Attack" />
+      <Label alignment="CENTER" layoutX="161.0" layoutY="347.0" prefHeight="17.0" prefWidth="69.0" text="Label" />
+      <Label alignment="CENTER" layoutX="161.0" layoutY="375.0" prefHeight="17.0" prefWidth="69.0" text="Item found" />
+      <Label alignment="CENTER" layoutX="69.0" layoutY="559.0" prefHeight="17.0" prefWidth="48.0" text="Health" />
+      <Button fx:id="Monster1" layoutX="225.0" layoutY="236.0" mnemonicParsing="false" onMouseClicked="#Monster1Clicked" prefHeight="25.0" prefWidth="89.0" text="Monster 1" />
+      <Button fx:id="Monster2" layoutX="318.0" layoutY="236.0" mnemonicParsing="false" onMouseClicked="#Monster2Clicked" prefHeight="25.0" prefWidth="89.0" text="Monster 2" />
+      <Button fx:id="Monster3" layoutX="411.0" layoutY="236.0" mnemonicParsing="false" onMouseClicked="#Monster3Clicked" prefHeight="25.0" prefWidth="89.0" text="Monster 3" />
+      <Button fx:id="Monster4" layoutX="225.0" layoutY="274.0" mnemonicParsing="false" onMouseClicked="#Monster4Clicked" prefHeight="25.0" prefWidth="89.0" text="Monster 4" />
+      <Button fx:id="Monster5" layoutX="318.0" layoutY="274.0" mnemonicParsing="false" onMouseClicked="#Monster5Clicked" prefHeight="25.0" prefWidth="89.0" text="Monster 5" />
+      <Button fx:id="Monster6" layoutX="411.0" layoutY="274.0" mnemonicParsing="false" onMouseClicked="#Monster6Clicked" prefHeight="25.0" prefWidth="89.0" text="Monster 6" />
+    </children>
+</AnchorPane>

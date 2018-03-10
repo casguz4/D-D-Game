@@ -1,2 +1,1 @@
-# D-D-Game
-Java application to play a dungeons and dragons type game
+# CIS2353-Fall2017-Group2
