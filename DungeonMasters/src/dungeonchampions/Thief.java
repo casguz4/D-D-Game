@@ -29,6 +29,7 @@ public class Thief extends Player {
         }
     }
     
+    @Override
     public String getName(){
         return name;
     }

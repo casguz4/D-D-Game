@@ -24,6 +24,7 @@ public class Wizard extends Player{
         target.modHealth( newDie.roll() );
     }
     
+    @Override
     public String getName(){
         return name;
     }

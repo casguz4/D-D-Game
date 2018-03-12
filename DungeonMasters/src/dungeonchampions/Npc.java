@@ -24,8 +24,18 @@ public class Npc
             //determine if it has weapon
             createWeapon( rank );
             createArmour( rank );
+    }//default ctor
+    
+    public Npc( int rank ){
+        this.rank = rank;
+        this.hitpoints = npcDice.roll(rank);
+            this.strength = npcDice.roll(rank);
+            this.wisdom = npcDice.roll(rank);
+            this.agility = npcDice.roll(rank);
             
-            
+            //determine if it has weapon
+            createWeapon( rank );
+            createArmour( rank );
     }
     public int getRank()
     {

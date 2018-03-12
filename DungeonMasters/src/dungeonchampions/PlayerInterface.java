@@ -6,6 +6,7 @@ package dungeonchampions;
  * @param <T>
  */
 public interface PlayerInterface<T> {
+    String getName();
     int getHealth();
     int getStrength();
     int getWisdom();

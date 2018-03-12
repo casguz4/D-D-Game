@@ -21,18 +21,17 @@ public class Priest extends Player{
 
     @Override
     public void attack(Npc target) {
-        target.modHealth(-strength);
+        target.modHealth( - strength );
     }
     
     public void useAbility(Player target){
-        Dice die = new Dice(6);
-        int heal =  die.roll(3);
-        target.modHealth(heal);
+        Dice die = new Dice( 6 );
+        int heal =  die.roll( 3 );
+        target.modHealth( heal );
     }
     
     @Override
     public void useAbility(Npc target) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        target = new Npc( target.getRank() - 1 );
     }
-
 }

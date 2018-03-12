@@ -25,6 +25,12 @@ public abstract class Player implements PlayerInterface{
         wisdom = playerDice.roll(3);
         agility = playerDice.roll(3);
     }
+    
+    @Override
+    public String getName(){
+        return name;
+    }
+    
     @Override
     public abstract void attack(Npc target);
     @Override
@@ -110,9 +116,5 @@ public abstract class Player implements PlayerInterface{
         return "Strenght :" + strength + ""
                 + "\nAgility " + agility + ""
                 + "\nWisdom" + wisdom;
-    }
-
-    public String getName(){
-        return name;
     }
 }

@@ -4,10 +4,7 @@
  * and open the template in the editor.
  */
 package dungeonmasters;
-import dungeonchampions.Knight;
-import dungeonchampions.Player;
-import dungeonchampions.Thief;
-import dungeonchampions.Wizard;
+import dungeonchampions.*;
 import dungeonmasters.DungeonMasters;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -101,14 +98,15 @@ public class FXMLController implements Initializable {
                     + "\n1 - Knight"
                     + "\n2 - Thief"
                     + "\n3 - Wizard"
-                    + "\n4 - Random");
+                    + "\n4 - Priest");
             int chooseClass = Integer.parseInt(input);
             while(chooseClass < 1 && chooseClass > 4){
                 JOptionPane.showMessageDialog(null, "What are you doing? Choose 1-4...");
                 input = JOptionPane.showInputDialog("What is your heroes class?\nChoose:"
                     + "\n1 - Knight"
                     + "\n2 - Thief"
-                    + "\n3 - Wizard");
+                    + "\n3 - Wizard"
+                    + "\n4 - Priest");
                 chooseClass = Integer.parseInt(input);
             }
             
@@ -123,6 +121,9 @@ public class FXMLController implements Initializable {
                 case 3:
                     playerArr[i] = new Wizard();
                     break;
+                case 4:
+                    playerArr[i] = new Priest();
+                    break;
                 default:
                     JOptionPane.showMessageDialog(null, "You must've messed something big up this time");
             }
@@ -136,7 +137,7 @@ public class FXMLController implements Initializable {
                 p1Weapon.setText("Weapon: Empty");
                 p1Armour.setText("Armour: Cloak");
             }
-            //To Do
+            // TODO: construct player initializer
             else if( i == 1 ){
                 player2.setText("Player 2 " + playerArr[i].getName());
                 p2Health.setText("Health: " + playerArr[i].getHealth() );

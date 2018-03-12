@@ -29,6 +29,7 @@ public class Knight extends Player{
         target.modHealth( strength + weapon.damage);
     }
     
+    @Override
     public String getName(){
         return name;
     }
